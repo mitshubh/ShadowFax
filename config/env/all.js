@@ -25,7 +25,11 @@ module.exports = {
 				'public/lib/angular-sanitize/angular-sanitize.js', 
 				'public/lib/angular-ui-router/release/angular-ui-router.js',
 				'public/lib/angular-ui-utils/ui-utils.js',
-				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js'
+				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
+				'public/lib/angular-csv-import-tmp/dist/angular-csv-import.js',
+				//"https://maps.googleapis.com/maps/api/js?key=AIzaSyDerh7a7O5GAzgvF5VM3c4vTaEZFf4wPZ0",
+				"https://maps.googleapis.com/maps/api/js?key=AIzaSyDerh7a7O5GAzgvF5VM3c4vTaEZFf4wPZ0&libraries=visualization"
+
 			]
 		},
 		css: [
