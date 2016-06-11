@@ -7,7 +7,7 @@ module.exports = function(app) {
 
     // Routing logic
     app.route('/categories')
-        .get(users.requiresLogin, categories.list)
+        .get(categories.list)
         .post(users.requiresLogin, categories.create);
 
     app.route('/categories/:categoryId')

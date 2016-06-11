@@ -6,8 +6,8 @@ module.exports = {
 		title: 'hack1 - Development Environment'
 	},
 	facebook: {
-		clientID: process.env.FACEBOOK_ID || 'APP_ID',
-		clientSecret: process.env.FACEBOOK_SECRET || 'APP_SECRET',
+		clientID: '282311135491226' || 'APP_ID',
+		clientSecret: '89469f0b42b73053dd782c94d74e31a8 ' || 'APP_SECRET',
 		callbackURL: '/auth/facebook/callback'
 	},
 	twitter: {
