@@ -4,9 +4,10 @@
         padding: 0;
       }
       #map {
-        height: 800px;
-        width:700px;
+        height: 700px;
+        width:1100px;
       }
+
       #floating-panel {
         position: absolute;
         top: 10px;
@@ -22,6 +23,10 @@
       }
       .content,.container {
         height: 100%;
+        margin: 0;
+      }
+      .maps-row{
+        margin-top: 70px;
       }
       #warnings-panel {
         width: 100%;
