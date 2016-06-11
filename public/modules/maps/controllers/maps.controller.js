@@ -1,6 +1,6 @@
-angular.module('maps').controller('MapsController', ['$scope', '$http', '$location', MapsController]);
+angular.module('maps').controller('MapsController', ['$scope', '$http', '$location','fileUpload', MapsController]);
 
-function MapsController($scope, $http, $location){
+function MapsController($scope, $http, $location, fileUpload){
 
 	var vm = this;
 
@@ -96,5 +96,15 @@ var i=0;
 
 
 autoUpdate();
+
+
+$scope.uploadFile = function(){
+			var file = $scope.myFile;
+			console.log('file is ' );
+			console.dir(file);
+			var uploadUrl = "/dataupload";
+			fileUpload.uploadFileToUrl(this.name, this.description, file, uploadUrl, $location);
+		};
+
 
 }
