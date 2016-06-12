@@ -13,7 +13,7 @@ var storage =   multer.diskStorage({
         callback(null, './uploads');
     },
     filename: function (req, file, callback) {
-        callback(null, req.body.name || file.fieldname + '-' + Date.now());
+        callback(null, (req.body.name + '.csv') || file.fieldname + '-' + Date.now());
     }
 });
 
@@ -33,6 +33,7 @@ function parseCSVFile(sourceFilePath, columns, onNewRecord, handleError, onColum
     parser.on("readable", function () {
         var record;
         while (record = parser.read()) {
+            console.log(linesRead);
             linesRead++;
             if (1 === linesRead) {
                 onColumns(record);
@@ -54,7 +55,7 @@ function parseCSVFile(sourceFilePath, columns, onNewRecord, handleError, onColum
 }
 
 exports.model = function(req, res, next) {
-    var datasetName = 'RidersDataset';
+    var datasetName = req.file.filename;
     var description = req.body.description || "";
     datasetUpload.createDataset(datasetName, description, function(err, dataset) {
         if (!err) {
@@ -70,10 +71,13 @@ exports.model = function(req, res, next) {
 exports.parse = function parseFile (req, res, next) {
     var filePath = req.file.path;
     console.log(req.file);
-    var datasetName = 'RidersDataset';
+    var datasetName = req.file.filename;
     logger.info('Processing Data file- %s ', filePath);
 
     function onNewRecord(record) {
+        //console.log('In onNewRecord');
+        //console.log('New Record ---');
+        //console.log(record);
         datasetUpload.upload(datasetName, record, rejectedDataLogger.error);
         // rejectedDataLogger.error(record, {reason: 'Datatype mismatch.'});
     }
@@ -85,10 +89,13 @@ exports.parse = function parseFile (req, res, next) {
     function done(linesRead) {
         fs.unlinkSync(filePath);
         res.status(201).json(res.datasetObj);
+        console.log('Done !!')
     }
 
     function onColumns(record) {
-        console.log(record);
+        //console.log('Inside onColumns');
+        //console.log('Record --- ');
+        //console.log(record);
         var errorMessage = null;
         _.forEach(record, function(value, key) {
             if (!_.include(supported, value) && !errorMessage) {

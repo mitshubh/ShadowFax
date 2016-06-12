@@ -1,6 +1,6 @@
 
 <ng-csv-import content="vm.content"
-    header="vm.header" 
+    header="vm.header"
     separator="vm.separator"
     result="vm.result"
     accept="vm.accept"></ng-csv-import>
@@ -30,11 +30,19 @@
 
     <div id="map"></div>
 <form class="form-horizontal" data-ng-submit="uploadFile()" novalidate>
-    <div class="form-group">
-					<!--<input type="submit" class="btn btn-default">-->
-					<input type = "file" file-model = "myFile" required/>
-					<br>
-					<button>Submit</button>
-				</div>
+	<fieldset>
+		<div class="form-group">
+			<label class="control-label" for="name">Name</label>
+			<div class="controls">
+				<input type="text" data-ng-model="name" id="name" class="form-control" placeholder="Name">
+			</div>
+		</div>
+		<div class="form-group">
+			<!--<input type="submit" class="btn btn-default">-->
+			<input type = "file" file-model = "myFile" required/>
+			<br>
+			<button>Submit</button>
+		</div>
+	</fieldset>
 
-				</form>
+</form>

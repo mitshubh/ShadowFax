@@ -1,0 +1,64 @@
+Sat Jun 11 2016 22:25:58 GMT+0530 (India Standard Time) - error: uncaughtException: Schema hasn't been registered for model "Dataset".
+Use mongoose.model(name, schema) date=Sat Jun 11 2016 22:25:58 GMT+0530 (India Standard Time), pid=1596, uid=null, gid=null, cwd=C:\Hackathons\shadowFax, execPath=C:\Program Files\nodejs\node.exe, version=v4.4.4, argv=[C:\Program Files\nodejs\node.exe, C:\Hackathons\shadowFax\server.js], rss=66142208, heapTotal=58969936, heapUsed=38745016, loadavg=[0, 0, 0], uptime=1579.0598546
+MissingSchemaError: Schema hasn't been registered for model "Dataset".
+,Use mongoose.model(name, schema)
+,    at Mongoose.model (C:\Hackathons\shadowFax\node_modules\mongoose\lib\index.js:323:13)
+,    at Object.<anonymous> (C:\Hackathons\shadowFax\app\utility\datasetUpload.js:7:24)
+,    at Module._compile (module.js:409:26)
+,    at Object.Module._extensions..js (module.js:416:10)
+,    at Module.load (module.js:343:32)
+,    at Function.Module._load (module.js:300:12)
+,    at Module.require (module.js:353:17)
+,    at require (internal/module.js:12:17)
+,    at Object.<anonymous> (C:\Hackathons\shadowFax\app\utility\parseCSVFile.js:7:21)
+,    at Module._compile (module.js:409:26)
+,    at Object.Module._extensions..js (module.js:416:10)
+,    at Module.load (module.js:343:32)
+,    at Function.Module._load (module.js:300:12)
+,    at Module.require (module.js:353:17)
+,    at require (internal/module.js:12:17)
+,    at Object.<anonymous> (C:\Hackathons\shadowFax\app\routes\riders.server.routes.js:5:17)
+
+Sat Jun 11 2016 22:26:31 GMT+0530 (India Standard Time) - error: uncaughtException: Schema hasn't been registered for model "Dataset".
+Use mongoose.model(name, schema) date=Sat Jun 11 2016 22:26:31 GMT+0530 (India Standard Time), pid=5872, uid=null, gid=null, cwd=C:\Hackathons\shadowFax, execPath=C:\Program Files\nodejs\node.exe, version=v4.4.4, argv=[C:\Program Files\nodejs\node.exe, C:\Hackathons\shadowFax\server.js], rss=72568832, heapTotal=57938000, heapUsed=38708216, loadavg=[0, 0, 0], uptime=1612.0817434
+MissingSchemaError: Schema hasn't been registered for model "Dataset".
+,Use mongoose.model(name, schema)
+,    at Mongoose.model (C:\Hackathons\shadowFax\node_modules\mongoose\lib\index.js:323:13)
+,    at Object.<anonymous> (C:\Hackathons\shadowFax\app\utility\datasetUpload.js:7:24)
+,    at Module._compile (module.js:409:26)
+,    at Object.Module._extensions..js (module.js:416:10)
+,    at Module.load (module.js:343:32)
+,    at Function.Module._load (module.js:300:12)
+,    at Module.require (module.js:353:17)
+,    at require (internal/module.js:12:17)
+,    at Object.<anonymous> (C:\Hackathons\shadowFax\app\utility\parseCSVFile.js:7:21)
+,    at Module._compile (module.js:409:26)
+,    at Object.Module._extensions..js (module.js:416:10)
+,    at Module.load (module.js:343:32)
+,    at Function.Module._load (module.js:300:12)
+,    at Module.require (module.js:353:17)
+,    at require (internal/module.js:12:17)
+,    at Object.<anonymous> (C:\Hackathons\shadowFax\app\routes\riders.server.routes.js:5:17)
+
+Sat Jun 11 2016 23:00:49 GMT+0530 (India Standard Time) - error: E11000 duplicate key error collection: hack1-dev.datasets index: name_1 dup key: { : "RidersDataset" }
+Sat Jun 11 2016 23:01:03 GMT+0530 (India Standard Time) - error: E11000 duplicate key error collection: hack1-dev.datasets index: name_1 dup key: { : "RidersDataset" }
+Sat Jun 11 2016 23:57:59 GMT+0530 (India Standard Time) - error: E11000 duplicate key error collection: hack1-dev.datasets index: name_1 dup key: { : "RidersDataset1" }
+Sat Jun 11 2016 23:58:56 GMT+0530 (India Standard Time) - info: Processing Data file- uploads\RidersDataset 
+Sat Jun 11 2016 23:58:56 GMT+0530 (India Standard Time) - error:  MissingSchemaError: Schema hasn't been registered for model "RidersDataset_New".
+Use mongoose.model(name, schema)
+    at Mongoose.model (C:\Hackathons\shadowFax\node_modules\mongoose\lib\index.js:323:13)
+    at Object.module.exports.upload (C:\Hackathons\shadowFax\app\utility\datasetUpload.js:36:34)
+    at onNewRecord (C:\Hackathons\shadowFax\app\utility\parseCSVFile.js:80:23)
+    at null.<anonymous> (C:\Hackathons\shadowFax\app\utility\parseCSVFile.js:40:17)
+    at emitNone (events.js:67:13)
+    at emit (events.js:166:7)
+    at emitReadable_ (_stream_readable.js:419:10)
+    at emitReadable (_stream_readable.js:413:7)
+    at readableAddChunk (_stream_readable.js:164:13)
+    at Readable.push (_stream_readable.js:111:10)
+    at Transform.push (_stream_transform.js:128:32)
+    at Parser.__push (C:\Hackathons\shadowFax\node_modules\csv-parse\lib\index.js:221:19)
+    at Parser.__write (C:\Hackathons\shadowFax\node_modules\csv-parse\lib\index.js:378:14)
+    at Parser._transform (C:\Hackathons\shadowFax\node_modules\csv-parse\lib\index.js:166:10)
+    at Transform._read (_stream_transform.js:167:10)
+    at Transform._write (_stream_transform.js:155:12)

@@ -8,6 +8,7 @@ function MapsController($scope, $http, $location, fileUpload){
 	vm.content='';
 	vm.separator=',';
 	vm.result='';
+    $scope.myFile='fk';
 
 	$scope.$watch('vm.result', function(nv){
 		console.log(nv);
@@ -59,7 +60,7 @@ var i=0;
           population: 603502
         }
       };
-      
+
       var jsonObj={};
 
       for(var i=0;i<latLong.length;i++)
@@ -99,12 +100,13 @@ autoUpdate();
 
 
 $scope.uploadFile = function(){
-			var file = $scope.myFile;
-			console.log('file is ' );
-			console.dir(file);
-			var uploadUrl = "/dataupload";
-			fileUpload.uploadFileToUrl(this.name, this.description, file, uploadUrl, $location);
-		};
+    var file = $scope.myFile;
+    console.log('file is ' );
+    console.dir(file);
+    console.log(file);
+    var uploadUrl = "/dataupload";
+    fileUpload.uploadFileToUrl(this.name, this.description, file, uploadUrl, $location);
+};
 
 
 }
