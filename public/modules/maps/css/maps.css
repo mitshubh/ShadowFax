@@ -21,12 +21,9 @@
         line-height: 30px;
         padding-left: 10px;
       }
-      .content,.container {
-        height: 100%;
-        margin: 0;
-      }
+
       .maps-row{
-        margin-top: 70px;
+        margin-left: -238px;
       }
       #warnings-panel {
         width: 100%;
