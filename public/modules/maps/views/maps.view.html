@@ -31,14 +31,14 @@
 <div class="col-md-4" style="height:700px;overflow-y:scroll;">
  <table class="table table-bordered table-hover">
     <thead>
-      <tr>
-        <th>Cluster ID</th>
-        <th>Location</th>
+      <tr style="background:rgba(0,0,0,0.4)">
+        <th style="text-align:center;">Cluster ID</th>
+        <th style="text-align:center;">Location</th>
         <th>Heat Map Index</th>
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="clusterid in vm.clusterIds" ng-click="vm.locationFocus($index)">
+      <tr ng-repeat="clusterid in vm.clusterIds" ng-click="vm.locationFocus($index)" style="cursor:pointer">
         <td ng-bind="clusterid"></td>
         <td ng-bind="vm.formattedLocs[$index]"></td>
         <td ng-bind="vm.heatMapInds[$index]" ng-style="{'background-color':'rgba(255,0,0,'+vm.heatMapInds[$index]+')'}"></td>
