@@ -41,7 +41,7 @@
       <tr ng-repeat="clusterid in vm.clusterIds" ng-click="vm.locationFocus($index)">
         <td ng-bind="clusterid"></td>
         <td ng-bind="vm.formattedLocs[$index]"></td>
-        <td ng-bind="vm.heatMapInds[$index]"></td>
+        <td ng-bind="vm.heatMapInds[$index]" ng-style="{'background-color':'rgba(255,0,0,'+vm.heatMapInds[$index]+')'}"></td>
       </tr>
     </tbody>
   </table>

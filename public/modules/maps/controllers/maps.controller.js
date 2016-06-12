@@ -47,7 +47,7 @@ function MapsController($scope, $http, $location, fileUpload, $q) {
         12.93779663, 12.97711057, 12.95864689, 12.91103293, 12.91726328, 12.92601312, 12.92151896, 12.95606712, 12.97378525, 12.88753730, 12.9188782
     ];
     vm.clusterIds = [38, 39, 41, 42, 52, 53, 56, 74, 91, 96, 100];
-    var counts = [89, 190, 282, 175, 182, 9, 227, 53, 142, 101, 261];
+    vm.counts = [89, 190, 282, 175, 182, 9, 227, 53, 142, 101, 261];
     vm.formattedLocs = [];
     vm.heatMapInds = [];
     var marker = null;
@@ -101,21 +101,21 @@ function MapsController($scope, $http, $location, fileUpload, $q) {
                 var content = '<div id="content">' +
                     '<p><b>' + response.data.results[0].formatted_address + '</b></p>' +
                     '<p>Cluster ID: ' + vm.clusterIds[index] + '</p>' +
-                    '<p>HEAT MAP INFORMATION</p><p><b>' + counts[index] / 400 + '</b></p>' +
+                    '<p>HEAT MAP INFORMATION</p><p><b>' + vm.counts[index] / 400 + '</b></p>' +
                     '</div>';
                 infowindow.setContent(content);
                 marker.addListener('click', function() {
 
                     infowindow.open(map, marker);
                 });
-                vm.heatMapInds.push(parseFloat(counts[index] / 400));
+                vm.heatMapInds.push(parseFloat(vm.counts[index] / 400));
                 // Add the circle for this city to the map.
                 var cityCircle = new google.maps.Circle({
                     strokeColor: 'black',
-                    strokeOpacity: counts[index] / 400,
-                    strokeWeight: counts[index] / 400,
+                    strokeOpacity: vm.counts[index] / 400,
+                    strokeWeight: vm.counts[index] / 400,
                     fillColor: 'red',
-                    fillOpacity: counts[index] / 400,
+                    fillOpacity: vm.counts[index] / 400,
                     map: map,
                     center: response.data.results[0].geometry.location,
                     radius: 900
