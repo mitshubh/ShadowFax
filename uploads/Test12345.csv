@@ -212,5 +212,3 @@ Sun Jun 12 2016 08:51:12 GMT+0530 (India Standard Time) - error:  Error: Invalid
     at ReadStream.Readable.push (_stream_readable.js:111:10)
     at onread (fs.js:1739:12)
     at FSReqWrap.wrapper [as oncomplete] (fs.js:576:17)
-Sun Jun 12 2016 08:52:58 GMT+0530 (India Standard Time) - error: E11000 duplicate key error collection: hack1-dev.datasets index: name_1 dup key: { : "Test12345.csv" }
-Sun Jun 12 2016 08:53:36 GMT+0530 (India Standard Time) - info: Processing Data file- uploads\IRSITest1.csv 
