@@ -2,7 +2,7 @@
     <div class="page-header">
         <h1 data-ng-bind="dataset.name"></h1>
         <p data-ng-bind="dataset.description"></p>
-        <h3>Cleaned Dataset</h3>
+        <button ng-click="plotHeatMap()">Plot Heat Map</button>
         <table><tr>
         <td data-ng-repeat="dim in dimensions">
             <pre  style="width:100px">{{dim}}</pre>
@@ -16,15 +16,5 @@
             </table>
         </div>
 
-    </div>
-    <div class="pull-right">
-        <a class="btn btn-primary" href="/#!/datasets/{{dataset._id}}/edit">
-            <i class="glyphicon glyphicon-edit"></i>
-        </a>
-        <a class="btn btn-primary" data-ng-click="remove();">
-            <i class="glyphicon glyphicon-trash"></i>
-        </a>
-        <br>
-        <button ng-click="rejectClicked()">View Inconsistent Data Points</button>
     </div>
 </section>

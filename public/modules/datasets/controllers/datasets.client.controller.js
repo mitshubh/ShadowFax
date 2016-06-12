@@ -105,8 +105,9 @@ angular.module('datasets').controller('DatasetsController', ['$scope', '$statePa
 			return parsedVal;
 		}
 
-		$scope.rejectClicked = function() {
-			window.location.href = "http://localhost:3000/rejected_data";
+		$scope.plotHeatMap = function() {
+			//window.location.href = "/maps";
+			$location.path("maps");
 		}
 	}
 ]);

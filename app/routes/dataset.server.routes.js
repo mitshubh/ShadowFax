@@ -12,11 +12,14 @@ module.exports = function(app) {
     app.use('/rejected_data', express.static('./logfiles/rejected-data.log'));
 
     app.route('/datasets')
-        .get(dataset.list)
+        .get(users.requiresLogin, dataset.list)
         .post(users.requiresLogin, dataset.create);
 
     app.route('/datasets/:datasetId')
-        .get(users.requiresLogin, dataset.read);
+        .get(dataset.read);
+
+    app.route('/datasets/:datasetId/data')
+        .get(dataset.readData);
 
     app.post('/dataupload', parseFile.upload, parseFile.model, parseFile.parse);
 

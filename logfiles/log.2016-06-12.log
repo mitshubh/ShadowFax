@@ -214,3 +214,131 @@ Sun Jun 12 2016 08:51:12 GMT+0530 (India Standard Time) - error:  Error: Invalid
     at FSReqWrap.wrapper [as oncomplete] (fs.js:576:17)
 Sun Jun 12 2016 08:52:58 GMT+0530 (India Standard Time) - error: E11000 duplicate key error collection: hack1-dev.datasets index: name_1 dup key: { : "Test12345.csv" }
 Sun Jun 12 2016 08:53:36 GMT+0530 (India Standard Time) - info: Processing Data file- uploads\IRSITest1.csv 
+Sun Jun 12 2016 09:19:31 GMT+0530 (India Standard Time) - info: Processing Data file- uploads\ShubhTest1.csv 
+Sun Jun 12 2016 09:34:30 GMT+0530 (India Standard Time) - error: uncaughtException: Schema hasn't been registered for model "OrderDetails.csv".
+Use mongoose.model(name, schema) date=Sun Jun 12 2016 09:34:30 GMT+0530 (India Standard Time), pid=11216, uid=null, gid=null, cwd=C:\Hackathons\shadowFax, execPath=C:\Program Files\nodejs\node.exe, version=v4.4.4, argv=[C:\Program Files\nodejs\node.exe, C:\Hackathons\shadowFax\server.js], rss=111734784, heapTotal=87684688, heapUsed=66958368, loadavg=[0, 0, 0], uptime=34128.6075823
+MissingSchemaError: Schema hasn't been registered for model "OrderDetails.csv".
+,Use mongoose.model(name, schema)
+,    at Mongoose.model (C:\Hackathons\shadowFax\node_modules\mongoose\lib\index.js:323:13)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\app\controllers\dataset.server.controller.js:64:38)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:177:8)
+,    at emitOne (events.js:77:13)
+,    at Promise.emit (events.js:169:7)
+,    at Promise.emit (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:84:38)
+,    at Promise.fulfill (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:97:20)
+,    at Promise.resolve (C:\Hackathons\shadowFax\node_modules\mongoose\lib\promise.js:114:23)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:177:8)
+,    at emitOne (events.js:77:13)
+,    at Promise.emit (events.js:169:7)
+,    at Promise.emit (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:84:38)
+,    at Promise.fulfill (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:97:20)
+,    at C:\Hackathons\shadowFax\node_modules\mongoose\lib\query.js:1406:13
+,    at model.Document.init (C:\Hackathons\shadowFax\node_modules\mongoose\lib\document.js:254:11)
+,    at completeOne (C:\Hackathons\shadowFax\node_modules\mongoose\lib\query.js:1404:10)
+
+Sun Jun 12 2016 09:35:07 GMT+0530 (India Standard Time) - error: uncaughtException: Schema hasn't been registered for model "IRSITest1.csv".
+Use mongoose.model(name, schema) date=Sun Jun 12 2016 09:35:07 GMT+0530 (India Standard Time), pid=14112, uid=null, gid=null, cwd=C:\Hackathons\shadowFax, execPath=C:\Program Files\nodejs\node.exe, version=v4.4.4, argv=[C:\Program Files\nodejs\node.exe, C:\Hackathons\shadowFax\server.js], rss=84836352, heapTotal=63073616, heapUsed=42953376, loadavg=[0, 0, 0], uptime=34165.9737195
+MissingSchemaError: Schema hasn't been registered for model "IRSITest1.csv".
+,Use mongoose.model(name, schema)
+,    at Mongoose.model (C:\Hackathons\shadowFax\node_modules\mongoose\lib\index.js:323:13)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\app\controllers\dataset.server.controller.js:64:38)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:177:8)
+,    at emitOne (events.js:77:13)
+,    at Promise.emit (events.js:169:7)
+,    at Promise.emit (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:84:38)
+,    at Promise.fulfill (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:97:20)
+,    at Promise.resolve (C:\Hackathons\shadowFax\node_modules\mongoose\lib\promise.js:114:23)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:177:8)
+,    at emitOne (events.js:77:13)
+,    at Promise.emit (events.js:169:7)
+,    at Promise.emit (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:84:38)
+,    at Promise.fulfill (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:97:20)
+,    at C:\Hackathons\shadowFax\node_modules\mongoose\lib\query.js:1406:13
+,    at model.Document.init (C:\Hackathons\shadowFax\node_modules\mongoose\lib\document.js:254:11)
+,    at completeOne (C:\Hackathons\shadowFax\node_modules\mongoose\lib\query.js:1404:10)
+
+Sun Jun 12 2016 09:36:30 GMT+0530 (India Standard Time) - error: uncaughtException: Schema hasn't been registered for model "ShubhTest1.csv".
+Use mongoose.model(name, schema) date=Sun Jun 12 2016 09:36:30 GMT+0530 (India Standard Time), pid=14648, uid=null, gid=null, cwd=C:\Hackathons\shadowFax, execPath=C:\Program Files\nodejs\node.exe, version=v4.4.4, argv=[C:\Program Files\nodejs\node.exe, C:\Hackathons\shadowFax\server.js], rss=126382080, heapTotal=102011472, heapUsed=75293696, loadavg=[0, 0, 0], uptime=34248.2794271
+MissingSchemaError: Schema hasn't been registered for model "ShubhTest1.csv".
+,Use mongoose.model(name, schema)
+,    at Mongoose.model (C:\Hackathons\shadowFax\node_modules\mongoose\lib\index.js:323:13)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\app\controllers\dataset.server.controller.js:64:38)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:177:8)
+,    at emitOne (events.js:77:13)
+,    at Promise.emit (events.js:169:7)
+,    at Promise.emit (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:84:38)
+,    at Promise.fulfill (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:97:20)
+,    at Promise.resolve (C:\Hackathons\shadowFax\node_modules\mongoose\lib\promise.js:114:23)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:177:8)
+,    at emitOne (events.js:77:13)
+,    at Promise.emit (events.js:169:7)
+,    at Promise.emit (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:84:38)
+,    at Promise.fulfill (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:97:20)
+,    at C:\Hackathons\shadowFax\node_modules\mongoose\lib\query.js:1406:13
+,    at model.Document.init (C:\Hackathons\shadowFax\node_modules\mongoose\lib\document.js:254:11)
+,    at completeOne (C:\Hackathons\shadowFax\node_modules\mongoose\lib\query.js:1404:10)
+
+Sun Jun 12 2016 10:27:52 GMT+0530 (India Standard Time) - error: uncaughtException: Schema hasn't been registered for model "ShubhTest1.csv".
+Use mongoose.model(name, schema) date=Sun Jun 12 2016 10:27:52 GMT+0530 (India Standard Time), pid=12392, uid=null, gid=null, cwd=C:\Hackathons\shadowFax, execPath=C:\Program Files\nodejs\node.exe, version=v4.4.4, argv=[C:\Program Files\nodejs\node.exe, C:\Hackathons\shadowFax\server.js], rss=90390528, heapTotal=72386128, heapUsed=46588968, loadavg=[0, 0, 0], uptime=34871.8290921
+MissingSchemaError: Schema hasn't been registered for model "ShubhTest1.csv".
+,Use mongoose.model(name, schema)
+,    at Mongoose.model (C:\Hackathons\shadowFax\node_modules\mongoose\lib\index.js:323:13)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\app\controllers\dataset.server.controller.js:64:38)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:177:8)
+,    at emitOne (events.js:77:13)
+,    at Promise.emit (events.js:169:7)
+,    at Promise.emit (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:84:38)
+,    at Promise.fulfill (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:97:20)
+,    at Promise.resolve (C:\Hackathons\shadowFax\node_modules\mongoose\lib\promise.js:114:23)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:177:8)
+,    at emitOne (events.js:77:13)
+,    at Promise.emit (events.js:169:7)
+,    at Promise.emit (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:84:38)
+,    at Promise.fulfill (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:97:20)
+,    at C:\Hackathons\shadowFax\node_modules\mongoose\lib\query.js:1406:13
+,    at model.Document.init (C:\Hackathons\shadowFax\node_modules\mongoose\lib\document.js:254:11)
+,    at completeOne (C:\Hackathons\shadowFax\node_modules\mongoose\lib\query.js:1404:10)
+
+Sun Jun 12 2016 10:28:48 GMT+0530 (India Standard Time) - info: Processing Data file- uploads\OrderData-Final1.csv 
+Sun Jun 12 2016 10:40:54 GMT+0530 (India Standard Time) - error: uncaughtException: Schema hasn't been registered for model "OrderData-Final1.csv".
+Use mongoose.model(name, schema) date=Sun Jun 12 2016 10:40:54 GMT+0530 (India Standard Time), pid=13004, uid=null, gid=null, cwd=C:\Hackathons\shadowFax, execPath=C:\Program Files\nodejs\node.exe, version=v4.4.4, argv=[C:\Program Files\nodejs\node.exe, C:\Hackathons\shadowFax\server.js], rss=121335808, heapTotal=98951760, heapUsed=43653792, loadavg=[0, 0, 0], uptime=35387.8516069
+MissingSchemaError: Schema hasn't been registered for model "OrderData-Final1.csv".
+,Use mongoose.model(name, schema)
+,    at Mongoose.model (C:\Hackathons\shadowFax\node_modules\mongoose\lib\index.js:323:13)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\app\controllers\dataset.server.controller.js:64:38)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:177:8)
+,    at emitOne (events.js:77:13)
+,    at Promise.emit (events.js:169:7)
+,    at Promise.emit (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:84:38)
+,    at Promise.fulfill (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:97:20)
+,    at Promise.resolve (C:\Hackathons\shadowFax\node_modules\mongoose\lib\promise.js:114:23)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:177:8)
+,    at emitOne (events.js:77:13)
+,    at Promise.emit (events.js:169:7)
+,    at Promise.emit (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:84:38)
+,    at Promise.fulfill (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:97:20)
+,    at C:\Hackathons\shadowFax\node_modules\mongoose\lib\query.js:1406:13
+,    at model.Document.init (C:\Hackathons\shadowFax\node_modules\mongoose\lib\document.js:254:11)
+,    at completeOne (C:\Hackathons\shadowFax\node_modules\mongoose\lib\query.js:1404:10)
+
+Sun Jun 12 2016 10:41:42 GMT+0530 (India Standard Time) - error: uncaughtException: Schema hasn't been registered for model "OrderData-Final1.csv".
+Use mongoose.model(name, schema) date=Sun Jun 12 2016 10:41:42 GMT+0530 (India Standard Time), pid=9008, uid=null, gid=null, cwd=C:\Hackathons\shadowFax, execPath=C:\Program Files\nodejs\node.exe, version=v4.4.4, argv=[C:\Program Files\nodejs\node.exe, C:\Hackathons\shadowFax\server.js], rss=86728704, heapTotal=68270416, heapUsed=45873888, loadavg=[0, 0, 0], uptime=35435.3303226
+MissingSchemaError: Schema hasn't been registered for model "OrderData-Final1.csv".
+,Use mongoose.model(name, schema)
+,    at Mongoose.model (C:\Hackathons\shadowFax\node_modules\mongoose\lib\index.js:323:13)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\app\controllers\dataset.server.controller.js:64:38)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:177:8)
+,    at emitOne (events.js:77:13)
+,    at Promise.emit (events.js:169:7)
+,    at Promise.emit (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:84:38)
+,    at Promise.fulfill (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:97:20)
+,    at Promise.resolve (C:\Hackathons\shadowFax\node_modules\mongoose\lib\promise.js:114:23)
+,    at Promise.<anonymous> (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:177:8)
+,    at emitOne (events.js:77:13)
+,    at Promise.emit (events.js:169:7)
+,    at Promise.emit (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:84:38)
+,    at Promise.fulfill (C:\Hackathons\shadowFax\node_modules\mongoose\node_modules\mpromise\lib\promise.js:97:20)
+,    at C:\Hackathons\shadowFax\node_modules\mongoose\lib\query.js:1406:13
+,    at model.Document.init (C:\Hackathons\shadowFax\node_modules\mongoose\lib\document.js:254:11)
+,    at completeOne (C:\Hackathons\shadowFax\node_modules\mongoose\lib\query.js:1404:10)
+
